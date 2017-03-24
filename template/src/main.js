@@ -7,6 +7,7 @@ import App from './App'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 import store from './store'
 import Routes from './routes'
 import CordovaHelper from './utils/CordovaHelper'
+require('./framework7')
 
 /* setup cordova */
 CordovaHelper.setup()
