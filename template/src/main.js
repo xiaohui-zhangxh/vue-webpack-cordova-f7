@@ -4,8 +4,8 @@
 {{/if_eq}}
 import Vue from 'vue'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 import App from './App'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
-import router from './router'
 import store from './store'
+import Routes from './routes'
 import CordovaHelper from './utils/CordovaHelper'
 
 /* setup cordova */
@@ -17,13 +17,18 @@ FastClick.attach(document.body)
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
-  router,
   store,
   {{#if_eq build "runtime"}}
   render: h => h(App){{#if_eq lintConfig "airbnb"}},{{/if_eq}}
   {{/if_eq}}
   {{#if_eq build "standalone"}}
   template: '<App/>',
+  framework7: {
+    root: '#app',
+    /* Uncomment to enable Material theme: */
+    // material: true,
+    routes: Routes
+  },
   components: { App }{{#if_eq lintConfig "airbnb"}},{{/if_eq}}
   {{/if_eq}}
 }){{#if_eq lintConfig "airbnb"}};{{/if_eq}}

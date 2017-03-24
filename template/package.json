@@ -16,7 +16,9 @@
     "fastclick": "^1.0.6",
     "vue": "^2.1.0",
     "vue-router": "^2.1.1",
-    "vuex": "^2.1.1"
+    "vuex": "^2.1.1",
+    "framework7": "^1.5.4",
+    "framework7-vue": "^0.8.5"
   },
   "devDependencies": {
     "autoprefixer": "^6.4.0",

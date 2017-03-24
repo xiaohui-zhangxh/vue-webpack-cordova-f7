@@ -1,6 +1,6 @@
-# vue-webpack-cordova
+# vue-webpack-cordova-f7
 
-Create a basic framework for Vue + Webpack + Cordova
+Create a basic framework for Vue + Webpack + Cordova + Framework7
 
 > A full-featured Webpack setup with hot-reload, lint-on-save, unit testing & css extraction.
 
@@ -14,8 +14,8 @@ Create a basic framework for Vue + Webpack + Cordova
 # prior versions don't support `complete` function in meta.js
 $ npm install vuejs/vue-cli -g
 $ npm install yarn -g # use yarn manage nodejs packages
-$ vue init xiaohui-zhangxh/vue-webpack-cordova my-project
-$ cd my-project
+$ vue init xiaohui-zhangxh/vue-webpack-cordova-f7 my-f7-project
+$ cd my-f7-project
 $ yarn
 $ npm run dev # run dev server
 $ npm run build # build production files to cordova/www/
